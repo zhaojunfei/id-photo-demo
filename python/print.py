@@ -3,9 +3,9 @@ import os
 
 
 def print_main():
-    # 支持排版的尺寸
+    # 支持排版的尺寸 小一寸260-378 一寸295-413 大一寸390-567 小二寸413-531  二寸413-579 大二寸626-413 三寸649-991 五寸1050-1499  
     print_item = ['260-378', '295-413', '390-567', '413-531', '413-579', '626-413', '649-991', '1050-1499']
-
+    
     id_photo = Image.open(os.getcwd() + '/../images/test.jpeg')  # 图片地址
     width_px, height_px = id_photo.size
     print_name = str(width_px) + '-' + str(height_px)
